@@ -1,0 +1,16 @@
+.App {
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.App .movies-container {
+	flex: 1;
+
+	padding-top: 15px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
