@@ -7,7 +7,9 @@ const Header = () => {
 				<img src='src\assets\imgs\logo.png' alt='Logo' />
 			</div>
 			<div>
-				<input className='search' type='text' placeholder='Search' />
+				<form action='GET'>
+					<input className='search' type='text' placeholder='Search' />
+				</form>
 			</div>
 		</div>
 	);
