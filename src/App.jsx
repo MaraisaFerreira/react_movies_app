@@ -15,9 +15,15 @@ function App() {
 			.then((json) => setMovies(json.results));
 	}, []);
 
+	const handleSearchMovies = (url) => {
+		fetch(url)
+			.then((resp) => resp.json())
+			.then((json) => setMovies(json.results));
+	};
+
 	return (
 		<div className='App'>
-			<Header />
+			<Header searchMovies={handleSearchMovies} />
 			<div className='movies-box'>
 				<MovieCard list={movies} />
 			</div>
